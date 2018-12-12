@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Adoption</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="/favicon-196.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to nav</a></li>
+    <li><a href="#main">Jump to main</a></li>
+    <li><a href="#content">Jump to content</a></li>
+    <li><a href="#about">Jump to about</a></li>
+  </ul>
+
+  <header role="banner" class="max-width pad-t-1-2 pad-b-1-2">
+    <div class="grid grid-bottom text-center">
+      <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4 logo island">
+        <a href="index.html"><img src="images/logo.svg" class="logo" alt="bark logo"></a>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-3-4 xl-3-4 gutter">
+        <nav tabindex="0" id="nav" role="navigation" class="bold milli">
+          <ul class="nav-wrapper list-group text-upper">
+            <li class="pad-t pad-b"><a href="index.html">Home</a></li>
+            <li class="pad-b"><a href="rescues.html">Our Rescues</a></li>
+            <li class="pad-b"><a href="adopt.html">Adoption</a></li>
+            <li class="pad-b"><a href="adopt.html">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <section id="banner-content" class="push-2">
+      <div class="banner-container adopt-banner">
+        <div class="banner-wrapper gutter-2 pad-t">
+          <h1 class="push-1-2">Ready to <span class="orange-text">Adopt</span> A New Friend?</h1>
+          <p class="banner-sentence">Take in one of our loving dogs into your home.</p>
+        </div>
+      </div>
+    </section>
+
+    <form role="form" action="index.html" method="POST" class="push-0">
+
+      <fieldset class="wrapper push-0">
+        <legend class="giga gutter-1-2 push">Personal Information</legend>
+
+        <div class="grid">
+          <div class="unit xs-1 s-1 l-1 xl-1 push-1-2 gutter-1-2">
+            <label for="first-name" class="push-1-2">Full Name</label>
+            <input type="text" id="first-name" name="name" required>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-b pad-t">
+            <label for="birthday" class="push-1-2">Date of Birth</label>
+            <input id="birthday" name="birthday" type="date" required>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-t pad-b gutter-1-2">
+            <label for="gender" class="push-1-2">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">Select a gender</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Non-binary</option>
+              <option>Both</option>
+            </select>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-b pad-t gutter-1-2">
+            <label for="employment" class="push-1-2">Are you employed?</label>
+            <select id="employment" name="employment">
+              <option value="">Select an answer</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Retired</option>
+            </select>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-t pad-b">
+            <label for="email" class="push-1-2">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-b pad-t">
+            <label for="number" class="push-1-2">Primary Phone</label>
+            <input id="number" type="tel" name="number">
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-t push-2">
+            <label for="number-two" class="push-1-2">Alternate Phone</label>
+            <input id="number-two" type="tel" name="number-two">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="wrapper push-0">
+        <legend class="giga gutter-1-2 pad-t-2">Address</legend>
+
+        <div class="grid grid-middle">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-t">
+            <label for="address" class="push-1-2">Street Address</label>
+            <input id="address" type="text" name="address">
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-t">
+            <label for="city" class="push-1-2">City</label>
+            <input id="city" type="text" name="city">
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-b pad-t gutter-1-2">
+            <label for="province" class="push-1-2">Province</label>
+            <select id="province" name="province">
+              <option value="">Select a province</option>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland & Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Québec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-3 gutter-1-2 pad-t push">
+            <label for="postal-code" class="push-1-2">Postal Code</label>
+            <input id="postal-code" type="text">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="wrapper push-0">
+        <legend class="giga gutter-1-2 push pad-t-2 push-1-2">Do you have any previous experience owning a pet?</legend>
+
+        <div class="grid">
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <input id="yes" type="radio" name="radio-1">
+            <label for="yes" class="gutter-1-2">Yes</label>
+
+            <input id="no" type="radio" name="radio-1">
+            <label for="no" class="gutter">No</label>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="wrapper push-0">
+        <legend class="giga gutter-1-2 push pad-t-2">Have you ever been denied for pet adoption?</legend>
+
+        <div class="grid">
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <input id="yes-denied" type="radio" name="radio-2">
+            <label for="yes-denied" class="gutter-1-2">Yes</label>
+
+            <input id="no-denied" type="radio" name="radio-2">
+            <label for="no-denied" class="gutter">No</label>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="wrapper push-0">
+        <legend class="giga gutter-1-2 push pad-t-2">Have you ever been convicted of animal cruelty?</legend>
+
+        <div class="grid">
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <input id="yes-one" type="radio" name="radio-3">
+            <label for="yes-one" class="gutter-1-2">Yes</label>
+
+            <input id="no-one" type="radio" name="radio-3">
+            <label for="no-one" class="gutter">No</label>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="wrapper push-0">
+        <legend class="giga gutter-1-2 push pad-t-2">Which one of our dogs would you like to adopt?</legend>
+        <div class="grid">
+          <div class="unit gutter-1-2">
+
+            <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4 push">
+              <input id="ernie" type="checkbox">
+              <label for="ernie">Ernie</label>
+            </div>
+
+            <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4 push">
+              <input id="bailey" type="checkbox">
+              <label for="bailey">Bailey</label>
+            </div>
+
+            <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4 push">
+              <input id="anjo" type="checkbox">
+              <label for="anjo">Anjo</label>
+            </div>
+
+            <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4 push">
+              <input id="jax" type="checkbox">
+              <label for="jax">Jax</label>
+            </div>
+
+            <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4 push">
+              <input id="kai" type="checkbox">
+              <label for="kai">Kai</label>
+            </div>
+
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="wrapper gutter-1-2 pad-b">
+        <legend class="giga pad-t pad-b-1-2">What kind of dog is this?</legend>
+
+        <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+          <div class="embed embed-1by1">
+            <img class="img-flex embed-item" src="images/rescue-card-six.jpg" alt="A picture of a golden retriever dog">
+          </div>
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-2 l-1 xl-1 pad-t-2">
+          <input id="wrong" type="radio" name="radio-4">
+          <label for="wrong">A Dalmation</label>
+
+          <input id="correct" type="radio" name="radio-4">
+          <label for="correct" class="gutter">A Golden Retriever</label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="wrapper gutter-1-2 pad-b">
+        <legend class="giga pad-t pad-b-1-2">Please explain why you think you are a good candidate for adopting...</legend>
+        <div>
+          <textarea id="explain" name="explain" class="push-1-2"></textarea>
+          <label for="explain" aria-label="Text area for explanation" class="micro push">We are looking forward to hearing from you.</label>
+        </div>
+      </fieldset>
+
+      <div class="text-center push-2">
+        <a href="adopt.html" class="btn btn-ghost" aria-label="Click to know more about Ernie">Submit</a>
+      </div>
+
+    </form>
+
+  </main>
+
+  <section role="region" class="emergency text-center push">
+    <div class="emergency-content island">
+      <p class="emergency-info push-0">In a case of kanine abandonment or abuse, please call...</p>
+      <h2 class="tera emergency-number push-0">613-738-0119</h2>
+    </div>
+  </section>
+
+  <footer role="contentinfo" class="micro gutter-1-2">
+    <div class="grid max-width micro pad-t gutter">
+      <div class="unit xs-1 s-1 m-1-3 l-1-4 xl-1-4 push">
+        <h3 class="kilo bold text-upper push-1-2">B.A.R.K.</h3>
+        <p class="push-1-2">2229 Braeside Avenue<br>Ottawa, ON.<br>K1H7J6</p>
+        <p class="bold push-0">Telephone: 613-738-0119</p>
+        <p class="bold">Email: smckeil@primus.ca</p>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-3 l-1-4 xl-1-4 push-2">
+        <h3 class="kilo bold text-upper push-1-2">GET INVOLVED</h3>
+        <ul class="get-involved block list-group push-0">
+          <li><a href="http://www.bark-ottawa.com/">Donate</a></li>
+          <li><a href="http://www.bark-ottawa.com/">Volunteer</a></li>
+          <li><a href="http://www.//www.bark-ottawa.com/">Events</a></li>
+          <li><a href="http://wwww.//www.bark-ottawa.com/">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="unit m-1-8 l-1-8 xl-1-8 vertical-line gutter-2">
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-3 l-1-4 xl-1-4">
+        <h3 class="kilo bold text-upper push-1-2">CONNECT WITH US</h3>
+        <ul class="social-icons list-group-inline">
+          <li>
+            <i class="icon i-32">
+              <a href="https://www.facebook.com/OttawaBARK/"><img src="images/facebook.svg" alt="facebook link"></a>
+            </i>
+          </li>
+
+          <li>
+            <i class="icon i-32">
+              <a href="http://wwww.twitter.com"><img src="images/twitter.svg" alt="twitter link"></a>
+            </i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
