@@ -1,0 +1,196 @@
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+.logo img {
+  width: 70%;
+  max-width: 150px;
+  min-width: 50px;
+}
+
+.logo {
+  margin: 0 auto;
+  outline: none;
+}
+
+/** NAVIGATION **/
+
+header nav li {
+  display: block;
+  width: 100%;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #0a6187;
+  margin-right: 0;
+  text-align: center;
+}
+
+.get-involved a {
+  list-style-type: none;
+  color: #000;
+  outline: none;
+}
+
+header nav li a:hover {
+  outline: none;
+  border-bottom: 2px solid #ce9845;
+  padding-bottom: 3px;
+  color: #ce9845;
+}
+
+/** BANNER CONTENT **/
+
+.banner-container {
+  width: 100%;
+  padding: 160px 0;
+  margin-bottom: .5em;
+  background-position: 70%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.homepage-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/homepage-banner.jpg");
+}
+
+.rescue-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/rescue-banner.jpg");
+}
+
+.adopt-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/adopt-banner.jpg");
+}
+
+h1 {
+  color: #fff;
+}
+
+.orange-text {
+  color: #ce9845;
+}
+
+.banner-sentence {
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  background-color: #0a6187;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #053042;
+  color: #fff;
+  outline: none;
+}
+
+.opening-subhead {
+  color: #000;
+}
+
+.style-line {
+  border-top: 2px solid #e2e2e2;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.emergency {
+  background-color: #871014;
+  color: #fff;
+}
+
+.vertical-line {
+  display: none;
+}
+
+.card-hover:hover {
+  background-color: #ce9845;
+}
+
+.card-content {
+  background-color: #e2e2e2;
+  color: #0a6187;
+}
+
+.card {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/** RESCUE PAGE **/
+
+.rescue-card {
+  background-color: #e2e2e2;
+  color: #0a6187;
+  text-decoration: none;
+}
+
+.card-color {
+  color: #000;
+  background-color: #e2e2e2;
+  text-decoration: none;
+}
+
+.card-color:hover {
+  background-color: #d3d3d3;
+}
+
+/** ADOPT PAGE **/
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: #0a6187;
+}
+
+input,
+select {
+  border-radius: .15em;
+  border: 2px solid #000;
+  outline: none;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input[type="checkbox"] + label::before {
+  border-radius: .15em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  header nav ul li {
+    display: inline;
+    padding: 0 1em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header nav {
+    text-align: right;
+  }
+
+  .page-content {
+    padding: 0 9em;
+  }
+
+  .vertical-line {
+    border-left: 2px solid #000;
+    height: 8em;
+    display: block;
+  }
+
+}
