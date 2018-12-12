@@ -10,7 +10,7 @@ html {
 }
 
 .logo {
-  margin: 0 auto;
+  margin: -21px auto;
   outline: none;
 }
 
@@ -69,8 +69,8 @@ h1 {
   color: #fff;
 }
 
-.orange-text {
-  color: #ce9845;
+.white-text {
+  color: #ffff;
 }
 
 .banner-sentence {
@@ -101,7 +101,7 @@ h1 {
 }
 
 .emergency {
-  background-color: #871014;
+  background-color: #000000;
   color: #fff;
 }
 
